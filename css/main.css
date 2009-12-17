@@ -139,6 +139,9 @@ h3 {
     font-size: 135.9%;
     text-align: center;
 }
+#disqus_thread h3 {
+    text-align: left;
+}
 .date {
     color: {{ site.pop }};
 }
