@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="post">
+  <div class="post-head">
+    <h1><a href="{{ first_post.url }}">{{ page.title | textilize }}</a></h1>
+    <span class="date">{{ page.date | date_to_long_string }}</span>
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</div>

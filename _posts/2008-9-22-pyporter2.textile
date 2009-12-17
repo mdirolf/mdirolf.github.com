@@ -1,0 +1,51 @@
+---
+layout: post
+title: _pyporter2_
+permalink: /project/pyporter2
+summary: This is an implementation of the "Porter2 (english) stemming algorithm":http://snowball.tartarus.org/algorithms/english/stemmer.html in Python. It was born out of some academic work I did on clustering algorithms in the spring of 2008. The "Porter Stemming Algorithm":http://tartarus.org/~martin/PorterStemmer/ was first published in "this":http://tartarus.org/~martin/PorterStemmer/def.txt 1979 paper - it is now one of the most widely known and used "stemming":http://en.wikipedia.org/wiki/Stemming algorithms. An "implementation":http://tartarus.org/~martin/PorterStemmer/python.txt of the Porter stemmer already existed in Python, but not of the updated Porter2 stemmer. I decided to implement a Python version of Porter2 as an exercise.
+---
+
+p(note). This "post" is actually just the *pyporter2* homepage, reformatted as a blog post. This is mainly so that the link doesn't disappear on anybody.
+
+h2. about
+
+{{ page.summary }}
+
+p(note). Python bindings for the official C version of the Porter2 stemmer exist "here":http://snowball.tartarus.org/wrappers/guide.html. If using these bindings is an option, it will probably be much more efficient than using the pure Python implementation here. *pyporter2* is useful when the C bindings are not an option (like in "Jython":http://www.jython.org/, "IronPython":http://www.codeplex.com/Wiki/View.aspx?ProjectName=IronPython, "Babble":http://github.com/babble/babble or "App Engine":http://code.google.com/appengine/).
+
+h2. download
+
+*pyporter2* is open source software, released under an MIT-style license. The latest version of *pyporter2* is available "here":http://github.com/mdirolf/pyporter2. To check out the source, install "Git":http://git.or.cz/ and run:
+
+{% highlight bash %}
+$ git clone git://github.com/mdirolf/pyporter2.git
+{% endhighlight %}
+
+h2. usage
+
+The new API(Application Programming Interface) matches that of "PyStemmer":http://snowball.tartarus.org/wrappers/guide.html. Here is an example of how to use *pyporter2*:
+
+{% highlight pycon %}
+>>> import Stemmer
+>>> print Stemmer.algorithms()
+['english']
+>>> stemmer = Stemmer.Stemmer('english')
+>>> print stemmer.stemWord('cycling')
+cycl
+>>> print stemmer.stemWords(['cycling', 'cyclist'])
+['cycl', 'cyclist']
+>>> print stemmer.stemWords(['cycling', u'cyclist'])
+['cycl', u'cyclist']
+{% endhighlight %}
+
+h2. testing
+
+*pyporter2* includes a test suite written using "unittest":http://docs.python.org/lib/module-unittest.html. To run the tests, do:
+
+{% highlight bash %}
+$ python Stemmer.py
+{% endhighlight %}
+
+h2. questions
+
+Feel free to leave a comment with any questions. It'd also be cool to let me know if you find *pyporter2* useful for anything.

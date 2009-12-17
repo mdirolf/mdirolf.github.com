@@ -1,0 +1,121 @@
+# jekyll config
+markdown: rdiscount
+pygments: true
+
+# sitewide config
+url: http://www.dirolf.com
+
+# color scheme
+white: rgb(247, 247, 225)
+light: rgb(247, 246, 175)
+mid_light: rgb(175, 240, 184)
+mid_light_alpha: rgba(175, 240, 184
+mid_dark: rgb(67, 112, 86)
+mid_dark_alpha: rgba(67, 112, 86
+dark: rgb(28, 33, 36)
+dark_alpha: rgba(28, 33, 36
+pop: rgb(214, 40, 34)
+
+# talks
+talks:
+  - date: 2009-12-15
+    title: .NET Rocks
+    link: http://www.dotnetrocks.com/default.aspx?showNum=507
+    media: audio
+    summary: Michael Dirolf is SQL Free with MongoDB
+
+  - date: 2009-11-20
+    title: Pivotal Tech Talk
+    link: http://pivotallabs.com/talks/85-mongodb
+    media: video
+    summary: Introduction to MongoDB (with a Ruby slant)
+
+  - date: 2009-11-19
+    title: RubyConf in 22 minutes
+    link: http://www.viddler.com/explore/GreggPollack/videos/32/722.79/Michael%20Dirolf/
+    media: video
+    summary: Quick recap of the full presentation I gave at RubyConf
+
+  - date: 2009-11-19
+    title: RubyConf IX
+    link: http://www.slideshare.net/mdirolf/mongodb-at-rubyconf
+    media: slides
+    summary: Introduction to MongoDB given at RubyConf
+
+  - date: 2009-11-15
+    title: SQL vs NoSQL Panel
+    link: http://www.youtube.com/watch?v=gAmVK-PaLqw
+    media: video
+    summary: Panel discussion at OpenSQL Camp Portland
+
+  - date: 2009-11-14
+    title: OpenSQL Camp Portland
+    link: http://www.youtube.com/watch?v=aoj87p_FX7Y
+    media: video
+    summary: Introduction to MongoDB given at OpenSQL Camp Portland
+
+  - date: 2009-11-07
+    title: RuPy
+    link: http://www.slideshare.net/mdirolf/mongodb-at-rupy
+    media: slides
+    summary: Keynote on MongoDB (with a Python slant)
+
+  - date: 2009-10-31
+    title: ReR2009
+    link: http://www.vimeo.com/7643422
+    media: video
+    summary: Introduction to MongoDB
+
+  - date: 2009-10-23
+    title: Strange Loop
+    link: http://www.slideshare.net/mdirolf/mongodb-strange-loop-2009
+    media: slides
+    summary: Introduction to MongoDB
+
+  - date: 2009-10-16
+    title: Hadoop DC
+    link: http://www.slideshare.net/mdirolf/mongodb-hadoop-dc
+    media: slides
+    summary: Discussion on MongoDB at Hadoop DC
+
+  - date: 2009-10-05
+    title: NYC NoSQL
+    link: http://www.slideshare.net/mdirolf/cool-things-you-should-build-on-mongodb-nyc-nosql-2142120
+    media: slides
+    summary: Lightning talk with ideas for cool things to build on MongoDB
+
+  - date: 2009-08-17
+    title: Strange Loop Speaker Focus
+    link: http://thestrangeloop.com/blog/09/08/17/speaker-focus-mike-dirolf-mongodb
+    media: text
+    summary: Text interview leading up to the Strange Loop
+
+  - date: 2009-07-02
+    title: London PHP
+    link: http://www.slideshare.net/mdirolf/mongodb-london-php
+    media: slides
+    summary: Introduction to MongoDB (with a PHP slant)
+
+  - date: 2009-06-30
+    title: EuroPython
+    link: http://wiki.europython.eu/RecordedTalks
+    media: audio
+    summary: Introduction to MongoDB (from Python)
+
+  - date: 2009-06-23
+    title: NYC Python
+    link: http://www.slideshare.net/mdirolf/mongodb-nyc-python
+    media: slides
+    summary: Introduction to MongoDB (from Python)
+
+  - date: 2009-06-04
+    title: SF Ruby
+    link: http://www.slideshare.net/mdirolf/mongodb-sf-ruby
+    media: slides
+    summary: Introduction to MongoDB (from Ruby)
+
+  - date: 2009-06-03
+    title: SF Python
+    link: http://www.slideshare.net/mdirolf/mongodb-sf-python
+    media: slides
+    summary: Introduction to MongoDB (from Python)
