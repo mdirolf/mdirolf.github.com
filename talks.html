@@ -1,0 +1,24 @@
+---
+layout: default
+title: mike dirolf
+---
+<div class="head">
+  <h1><p>Talks</p></h1>
+</div>
+<p>
+  <table>
+    {% for talk in site.talks %}
+    <tr title="{{ talk.summary }}">
+      <td class="date">
+        {{ talk.date | date_to_string }}
+      </td>
+      <td>
+        {{ talk.title }}
+      </td>
+      <td>
+        <a href="{{ talk.link }}">{{ talk.media }}</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</p>

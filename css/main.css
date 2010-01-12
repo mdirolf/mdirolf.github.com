@@ -149,7 +149,7 @@ span.date {
     padding-left: 0.5em;
     vertical-align: 15%;
 }
-.post-head {
+.head {
     margin-top: 2em;
 }
 .post-summary {
@@ -186,11 +186,11 @@ span.date {
 #info ul {
     font-size: 123.1%;
 }
-#info table {
+table {
     font-size: 123.1%;
 }
-#info td {
-    padding-left: 0.25em;
+td {
+    padding-left: 0.3em;
 }
 td.link {
     padding-top: 0.5em;
