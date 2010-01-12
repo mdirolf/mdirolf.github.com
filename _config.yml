@@ -19,7 +19,7 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
   - date: 2009-12-17
-    title: the changelog
+    title: The Changelog
     link: http://thechangelog.com/post/287597162/episode-0-0-7-mike-dirolf-from-10gen-and-mongodb
     media: audio
     summary: Insight on how MongoDB came about, design decisions, and the future of this cool NoSQL server
