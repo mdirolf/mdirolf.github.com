@@ -18,6 +18,18 @@ pop: rgb(214, 40, 34)
 
 # talks
 talks:
+  - date: 2010-1-14
+    title: CodeMash 2.0.1.0
+    link: http://www.slideshare.net/mdirolf/codemash-2010
+    media: slides
+    summary: MongoDB talk from CodeMash in Sandusky, Ohio. An introduction.
+
+  - date: 2010-1-13
+    title: dnrTV
+    link: http://www.dnrtv.com/default.aspx?showNum=163
+    media: video
+    summary: Michael Dirolf, who was recently on .NET Rocks! talking about MongoDB, shows us exactly what it is and how it works in this episode of dnrTV. Michael details installation options and demonstrates the key features.
+
   - date: 2009-12-17
     title: The Changelog
     link: http://thechangelog.com/post/287597162/episode-0-0-7-mike-dirolf-from-10gen-and-mongodb
