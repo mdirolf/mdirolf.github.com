@@ -18,6 +18,18 @@ pop: rgb(214, 40, 34)
 
 # talks
 talks:
+  - date: 2010-01-22
+    title: FLOSS Weekly
+    link: http://twit.tv/floss105
+    media: audio
+    summary: Conversation about MongoDB on FLOSS Weekly.
+
+  - date: 2010-01-21
+    title: Django-NYC
+    link: http://www.slideshare.net/mdirolf/mongodb-lt3s-django-django-nyc
+    media: slides
+    summary: Discussion about how to integrate MongoDB and Django now, and how this will look in the future.
+
   - date: 2010-01-14
     title: CodeMash 2.0.1.0
     link: http://www.slideshare.net/mdirolf/codemash-2010
