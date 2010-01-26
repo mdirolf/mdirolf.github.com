@@ -68,8 +68,8 @@ talks:
 
   - date: 2009-11-19
     title: RubyConf IX
-    link: http://www.slideshare.net/mdirolf/mongodb-at-rubyconf
-    media: slides
+    link: http://rubyconf2009.confreaks.com/19-nov-2009-16-20-getting-non-relational-with-mongodb-michael-dirolf.html
+    media: video
     summary: Introduction to MongoDB given at RubyConf
 
   - date: 2009-11-15
