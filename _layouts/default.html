@@ -5,7 +5,11 @@ talks_to_show: 15
           "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-    <title>{{ page.title | textilize | strip_html }}</title>
+    {% if page.title %}
+    <title>{{ page.title | textilize | strip_html }} - mike dirolf</title>
+    {% else %}
+    <title>mike dirolf</title>
+    {% endif %}
     <link href="{{ site.url }}/atom.xml" rel="alternate" type="application/atom+xml"/>
     <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css" />
     <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
