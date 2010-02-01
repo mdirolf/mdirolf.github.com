@@ -152,6 +152,9 @@ span.date {
 .head {
     margin-top: 2em;
 }
+.post-head {
+    margin-top: 2em;
+}
 .post-summary {
     font-size: 123.1%;
 }

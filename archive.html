@@ -1,0 +1,17 @@
+---
+layout: default
+title: archive - mike dirolf
+---
+<div class="main">
+  {% for post in site.posts %}
+  <div class="post">
+    <div class="post-head">
+      <h2><a href="{{ post.url }}">{{ post.title | textilize }}</a></h2>
+      <span class="date">{{ post.date | date_to_long_string }}</span>
+    </div>
+    <div class="post-summary">
+      {{ post.summary | textilize }} <a href="{{ post.url }}">(more&hellip;)</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -19,10 +19,10 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
   - date: 2010-01-28
-    title: New England Database Summit
+    title: N.E. Database Summit
     link: http://www.slideshare.net/mdirolf/new-england-database-summit-talk-on-mongodb
     media: slides
-    summary: Talk introducing MongoDB at the NEDB Summit - a meeting of academics and industry.
+    summary: Talk introducing MongoDB at the New England Database Summit - a meeting of academics and industry.
 
   - date: 2010-01-22
     title: FLOSS Weekly
