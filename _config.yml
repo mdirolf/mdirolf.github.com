@@ -8,6 +8,7 @@ url: http://www.dirolf.com
 # color scheme
 white: rgb(247, 247, 225)
 light: rgb(247, 246, 175)
+mid_light_light: rgb(221, 251, 210)
 mid_light: rgb(175, 240, 184)
 mid_light_alpha: rgba(175, 240, 184
 mid_dark: rgb(67, 112, 86)

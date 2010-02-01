@@ -142,6 +142,27 @@ h3 {
 #disqus_thread h3 {
     text-align: left;
 }
+.dsq-dc-logo {
+    display: none;
+}
+.dsq-options {
+    display: none;
+}
+#disqus_thread {
+    margin: 1em -2em -2.5em -2em !important;
+    padding: 1em 2em 2em 2em;
+    background-color: {{ site.mid_light_light }} !important;
+    border-top: 0.1em solid {{ site.mid_light }};
+}
+#dsq-content .dsq-comment-message {
+    font-size: 123.1% !important;
+}
+#dsq-content .dsq-login-buttons {
+    background-image: none !important;
+}
+#dsq-content .dsq-request-user-info {
+    background-image: none !important;
+}
 .date {
     color: {{ site.pop }};
 }
