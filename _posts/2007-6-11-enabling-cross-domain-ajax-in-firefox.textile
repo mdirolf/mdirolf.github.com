@@ -15,10 +15,11 @@ I'm also not positive if this works in newer versions of FF(firefox), and I have
 
 {{ page.summary }}
 
-# Close Firefox
-# Edit the file *prefs.js* in your Firefox user profile folder
-# Add the following line anywhere in the file:
+# <p>Close Firefox
+# <p>Edit the file *prefs.js* in your Firefox user profile folder
+# <p>Add the following line anywhere in the file:
 {% highlight javascript %}
-user_pref("capability.policy.default.XMLHttpRequest.open", "allAccess");
+user_pref("capability.policy.default.XMLHttpRequest.open",
+          "allAccess");
 {% endhighlight %}
-# Save the file and re-open Firefox. You can now risk your life and limb by doing XHR(XMLHttpRequests)'s to whatever domains you want - congratulations!
+# <p>Save the file and re-open Firefox. You can now risk your life and limb by doing XHR(XMLHttpRequests)'s to whatever domains you want - congratulations!
