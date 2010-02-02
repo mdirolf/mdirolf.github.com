@@ -193,6 +193,9 @@ ol li {
 ol li p {
     font-style: normal;
 }
+ol li div {
+    font-style: normal;
+}
 blockquote {
     margin-left: 0.2em;
     padding-left: 1em;
