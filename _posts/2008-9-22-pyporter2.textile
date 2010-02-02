@@ -1,7 +1,7 @@
 ---
 layout: post
 title: _pyporter2_
-permalink: /project/pyporter2
+permalink: /project/pyporter2.html
 summary: This is an implementation of the "Porter2 (english) stemming algorithm":http://snowball.tartarus.org/algorithms/english/stemmer.html in Python. It was born out of some academic work I did on clustering algorithms in the spring of 2008. The "Porter Stemming Algorithm":http://tartarus.org/~martin/PorterStemmer/ was first published in "this":http://tartarus.org/~martin/PorterStemmer/def.txt 1979 paper - it is now one of the most widely known and used "stemming":http://en.wikipedia.org/wiki/Stemming algorithms. An "implementation":http://tartarus.org/~martin/PorterStemmer/python.txt of the Porter stemmer already existed in Python, but not of the updated Porter2 stemmer. I decided to implement a Python version of Porter2 as an exercise.
 ---
 
