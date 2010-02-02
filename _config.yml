@@ -11,6 +11,7 @@ light: rgb(247, 246, 175)
 mid_light_light: rgb(221, 251, 210)
 mid_light: rgb(175, 240, 184)
 mid_light_alpha: rgba(175, 240, 184
+mid_light_dark: rgb(162, 222, 171)
 mid_dark: rgb(67, 112, 86)
 mid_dark_alpha: rgba(67, 112, 86
 dark: rgb(28, 33, 36)

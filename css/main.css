@@ -219,6 +219,7 @@ blockquote em {
 #info {
     padding-top: 1em;
     padding-bottom: 2em;
+    border-top: 0.1em solid {{ site.mid_light_dark }};
     background-color: {{ site.mid_light }};
     padding-left: 2em;
     padding-right: 2em;
