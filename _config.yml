@@ -20,6 +20,12 @@ pop: rgb(214, 40, 34)
 
 # talks
 talks:
+  - date: 2010-02-02
+    title: DC Python / ZPUG DC
+    link: http://www.ustream.tv/recorded/4405505
+    media: video
+    summary: A talk about MongoDB, PyMongo, and using both in combination with Django.
+
   - date: 2010-01-28
     title: N.E. Database Summit
     link: http://www.slideshare.net/mdirolf/new-england-database-summit-talk-on-mongodb
