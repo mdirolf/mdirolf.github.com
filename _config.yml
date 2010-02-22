@@ -20,6 +20,12 @@ pop: rgb(214, 40, 34)
 
 # talks
 talks:
+  - date: 2010-02-21
+    title: PyCon Poster Session
+    link: http://www.scribd.com/doc/27220664/PyCon-2010-Poster-on-MongoDB
+    media: slides
+    summary: PDF of a poster on MongoDB presented at PyCon 2010 in Atlanta.
+
   - date: 2010-02-02
     title: DC Python / ZPUG DC
     link: http://www.ustream.tv/recorded/4405505
