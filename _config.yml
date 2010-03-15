@@ -21,7 +21,7 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
   - date: 2010-03-08
-    title: MongoDB: How it Works
+    title: MongoDB - How it Works
     link: http://www.slideshare.net/mdirolf/mongodb-how-it-works
     media: slides
     summary: 10gen webinar on MongoDB internals.
