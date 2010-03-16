@@ -3,7 +3,7 @@ markdown: rdiscount
 pygments: true
 
 # sitewide config
-url: http://www.dirolf.com
+url: http://dirolf.com
 
 # color scheme
 white: rgb(247, 247, 225)
