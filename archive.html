@@ -6,7 +6,7 @@ title: archive
   {% for post in site.posts %}
   <div class="post">
     <div class="post-head">
-      <h2><a href="{{ post.url }}">{{ post.title | textilize }}</a></h2>
+      <h2><a href="{{ post.url }}">{{ post.title | textilize | remove:'<p>' | remove:'</p>' }}</a></h2>
       <span class="date">{{ post.date | date_to_long_string }}</span>
     </div>
     <div class="post-summary">
