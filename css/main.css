@@ -46,6 +46,7 @@ a:hover {
     letter-spacing: 0.05em;
     padding-top: 0.1em;
     z-index: 1;
+    display: block;
 }
 #hl {
     color: {{ site.light }};
