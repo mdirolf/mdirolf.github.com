@@ -2,7 +2,7 @@
 layout: post
 title: Enabling _Cross-Domain AJAX_ in _Firefox_
 permalink: /2007/06/enabling-cross-domain-ajax-in-firefox.html
-summary: Tonight I have finally conquered one of the biggest annoyances of the past year for me (in terms of development at least). Developing web applications with Firefox is a pleasure because of the "firebug extension":http://www.getfirebug.com/. Nothing comes close in Safari. Unfortunately, Firefox doesn't allow cross-domain XMLHttpRequests for security reasons. While good security is a plus, this restriction can make development and testing a real chore. For those of us willing to risk the security vulnerability, here is how to bypass the cross-domain restriction once and for all.
+summary: Tonight I have finally conquered one of the biggest annoyances of the past year for me (in terms of development at least). Developing web applications with Firefox is a pleasure because of the "firebug extension":http://getfirebug.com/. Nothing comes close in Safari. Unfortunately, Firefox doesn't allow cross-domain XMLHttpRequests for security reasons. While good security is a plus, this restriction can make development and testing a real chore. For those of us willing to risk the security vulnerability, here is how to bypass the cross-domain restriction once and for all.
 ---
 
 <div class="note">
