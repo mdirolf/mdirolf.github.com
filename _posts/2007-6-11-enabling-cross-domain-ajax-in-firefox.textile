@@ -10,7 +10,7 @@ Updated 2009-12-13: This post seems to be the most popular of those from the old
 
 bq. Good trick, but there's an easier way to enable cross domain without editing config files by hand. Type "about:config" in your URL bar, then right click on the list of preferences and select the _New_ -> _String_ contextual menu. Add *capability.policy.default.XMLHttpRequest.open* as key name and *allAccess* as value. I do not remember if this is taken into account immediately or if you have to reboot. Done!
 
-I'm also not positive if this works in newer versions of FF(firefox), and I haven't tested it. Feel free to let everybody know in the comments.
+I'm also not positive if this works in newer versions of Firefox, and I haven't tested it. Feel free to let everybody know in the comments.
 </div>
 
 {{ page.summary }}
