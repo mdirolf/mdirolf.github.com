@@ -3,15 +3,19 @@ layout: default
 ---
 <div class="post">
   <div class="head">
-    <h1><a href="{{ first_post.url }}">{{ page.title | textilize }}</a></h1>
+    <h1><a href="{{ first_post.url }}">{{ page.title | textilize | remove:'<p>' | remove:'</p>' }}</a></h1>
     <span class="date">{{ page.date | date_to_long_string }}</span>
   </div>
   <div class="post-content">
     {{ content }}
   </div>
 </div>
-<div id="disqus_thread"></div>
+<div id="disqus_thread">
+  <noscript>
+    <a href="http://disqus.com/forums/dirolf/?url=ref">View the discussion thread.</a>
+  </noscript>
+</div>
 <script type="text/javascript">
   var disqus_developer = true;
 </script>
-<script type="text/javascript" src="http://disqus.com/forums/dirolf/embed.js"></script><noscript><a href="http://disqus.com/forums/dirolf/?url=ref">View the discussion thread.</a></noscript>
+<script type="text/javascript" src="http://disqus.com/forums/dirolf/embed.js"></script>
