@@ -237,6 +237,8 @@ blockquote em {
 }
 #info ul {
     font-size: 123.1%;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 table {
     font-size: 123.1%;
@@ -307,4 +309,8 @@ pre {
 #MD-Canvas {
     padding-left: 5%;
     width: 90%
+}
+table#talks {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }

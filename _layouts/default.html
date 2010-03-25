@@ -64,30 +64,28 @@ talks_to_show: 15
         <div id="info" class="yui-g">
           <div class="yui-u first">
             <h1><a href="/talks.html">latest talks</a></h1>
-            <p>
-              <table>
-                {% for talk in site.talks limit:page.talks_to_show %}
-                <tr title="{{ talk.summary }}">
-                  <td class="media-type" title="{{ talk.media | capitalize }}">
-                    ({{ talk.media | truncate:2, ")" }}
-                  </td>
-                  <td class="date">
-                    {{ talk.date | date_to_string }}
-                  </td>
-                  <td class="title">
-                    <a href="{{ talk.link }}">{{ talk.title }}</a>
-                  </td>
-                </tr>
-                {% endfor %}
-                {% if site.talks.size > page.talks_to_show %}
-                <tr>
-                  <td class="link" colspan="3">
-                    <a href="/talks.html">&laquo; all talks &raquo;</a>
-                  </td>
-                </tr>
-                {% endif %}
-              </table>
-            </p>
+            <table id="talks">
+              {% for talk in site.talks limit:page.talks_to_show %}
+              <tr title="{{ talk.summary }}">
+                <td class="media-type" title="{{ talk.media | capitalize }}">
+                  ({{ talk.media | truncate:2, ")" }}
+                </td>
+                <td class="date">
+                  {{ talk.date | date_to_string }}
+                </td>
+                <td class="title">
+                  <a href="{{ talk.link }}">{{ talk.title }}</a>
+                </td>
+              </tr>
+              {% endfor %}
+              {% if site.talks.size > page.talks_to_show %}
+              <tr>
+                <td class="link" colspan="3">
+                  <a href="/talks.html">&laquo; all talks &raquo;</a>
+                </td>
+              </tr>
+              {% endif %}
+            </table>
           </div>
           <div class="yui-u">
             <h1>about</h1>
@@ -99,33 +97,30 @@ talks_to_show: 15
             </p>
             <h1>projects</h1>
             <div id="projects">
-              <p>
-                <ul>
-                  <li title="Python driver for MongoDB">
-                    <a href="http://api.mongodb.org/python">PyMongo</a></li>
-                  <li title="Ruby driver for MongoDB">
-                    <a href="http://github.com/mongodb/mongo-ruby-driver">mongo-ruby-driver</a></li>
-                  <li title="Document-oriented database">
-                    <a href="http://www.mongodb.org">MongoDB</a></li>
-                  <li title="Nginx module for serving content from GridFS">
-                    <a href="http://github.com/mdirolf/nginx-gridfs">nginx-gridfs</a></li>
-                  <li title="An example app using Django and MongoDB">
-                    <a href="http://github.com/mdirolf/DjanMon">DjanMon</a></li>
-                  <li title="Connector to use MongoDB with Google App Engine">
-                    <a href="http://github.com/mdirolf/mongo-appengine-connector">appengine-connector</a></li>
-                  <li title="Standard ML driver for MongoDB">
-                    <a href="http://github.com/mdirolf/mlmongo">mlmongo</a></li>
-                  <li title="Pure Python implementation of the Porter 2 stemming algorithm">
-                    <a href="/project/pyporter2.html">pyporter2</a></li>
-                  <li title="A fun little JavaScript game inspired by the Rubik's Cube">
-                    <a href="/2007/11/zoomix-another-javascript-game.html">Zoomix</a></li>
-                  <li title="A fun little JavaScript game">
-                    <a href="/2007/06/fun-game.html">MDCave</a></li>
-                  <li title="A 2D space exploration game">
-                    <a href="http://github.com/mdirolf/space">space</a></li>
-                </ul>
-                <br>
-              </p>
+              <ul>
+                <li title="Python driver for MongoDB">
+                  <a href="http://api.mongodb.org/python">PyMongo</a></li>
+                <li title="Ruby driver for MongoDB">
+                  <a href="http://github.com/mongodb/mongo-ruby-driver">mongo-ruby-driver</a></li>
+                <li title="Document-oriented database">
+                  <a href="http://www.mongodb.org">MongoDB</a></li>
+                <li title="Nginx module for serving content from GridFS">
+                  <a href="http://github.com/mdirolf/nginx-gridfs">nginx-gridfs</a></li>
+                <li title="An example app using Django and MongoDB">
+                  <a href="http://github.com/mdirolf/DjanMon">DjanMon</a></li>
+                <li title="Connector to use MongoDB with Google App Engine">
+                  <a href="http://github.com/mdirolf/mongo-appengine-connector">appengine-connector</a></li>
+                <li title="Standard ML driver for MongoDB">
+                  <a href="http://github.com/mdirolf/mlmongo">mlmongo</a></li>
+                <li title="Pure Python implementation of the Porter 2 stemming algorithm">
+                  <a href="/project/pyporter2.html">pyporter2</a></li>
+                <li title="A fun little JavaScript game inspired by the Rubik's Cube">
+                  <a href="/2007/11/zoomix-another-javascript-game.html">Zoomix</a></li>
+                <li title="A fun little JavaScript game">
+                  <a href="/2007/06/fun-game.html">MDCave</a></li>
+                <li title="A 2D space exploration game">
+                  <a href="http://github.com/mdirolf/space">space</a></li>
+              </ul>
             </div>
           </div>
         </div>
