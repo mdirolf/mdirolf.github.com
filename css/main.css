@@ -310,7 +310,7 @@ pre {
     padding-left: 5%;
     width: 90%
 }
-table#talks {
+table.talks {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }

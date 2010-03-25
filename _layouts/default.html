@@ -64,7 +64,7 @@ talks_to_show: 15
         <div id="info" class="yui-g">
           <div class="yui-u first">
             <h1><a href="/talks.html">latest talks</a></h1>
-            <table id="talks">
+            <table class="talks">
               {% for talk in site.talks limit:page.talks_to_show %}
               <tr title="{{ talk.summary }}">
                 <td class="media-type" title="{{ talk.media | capitalize }}">
