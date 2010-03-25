@@ -5,7 +5,7 @@ talks_to_show: 15
           "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     {% if page.title %}
     <title>{{ page.title | textilize | strip_html }} - mike dirolf</title>
     {% else %}
@@ -28,7 +28,7 @@ talks_to_show: 15
   </head>
   <body>
     <div id="doc" class="yui-t7">
-      <div id="hd" role="banner">
+      <div id="hd">
         <a href="{{ site.url }}/"><div id="t">mike dirolf</div></a>
         <div id="hl">
           <div id="hlrr">
@@ -57,12 +57,12 @@ talks_to_show: 15
           </div>
         </div>
       </div>
-      <div id="bd" role="undefined">
-        <div id="content" role="main" class="yui-g">
+      <div id="bd">
+        <div id="content" class="yui-g">
           {{ content }}
         </div>
         <div id="info" class="yui-g">
-          <div role="complementary" class="yui-u first">
+          <div class="yui-u first">
             <h1><a href="/talks.html">latest talks</a></h1>
             <p>
               <table>
@@ -89,7 +89,7 @@ talks_to_show: 15
               </table>
             </p>
           </div>
-          <div role="complementary" class="yui-u">
+          <div class="yui-u">
             <h1>about</h1>
             <p>
             {% capture bio %}
@@ -130,7 +130,7 @@ talks_to_show: 15
           </div>
         </div>
       </div>
-      <div id="ft" role="contentinfo">
+      <div id="ft">
         &copy; 2007-2010 <a href="{{ site.url }}">Michael Dirolf</a> - Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons License</a>.
         <br>
         All code examples are licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
