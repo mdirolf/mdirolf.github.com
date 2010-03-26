@@ -50,8 +50,8 @@ a:hover {
     filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#99437056',endColorstr='#99437056');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#99437056',endColorstr='#99437056')";
 
-    /* TODO FF / Chrome don't inherit alpha */
-    text-shadow: {{ site.pop }} 0.1em 0em 0;
+    /* note this is broken in current safari but fixed in devel versions */
+    text-shadow: rgba(214, 40, 34, 0.6) 0.1em 0em 0;
     /* TODO no idea if this actually works or not? */
     filter: progid:DXImageTransform.Microsoft.Shadow(color=#D62822,direction=90,strength=13);
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#D62822,direction=90,strength=13)";
