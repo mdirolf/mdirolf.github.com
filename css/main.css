@@ -144,9 +144,6 @@ h2 {
     font-size: 153.9%;
     display: inline;
 }
-h2 p {
-    display: inline;
-}
 h2 a {
     text-decoration: none;
     color: {{ site.dark }};
@@ -186,7 +183,7 @@ h3 {
 }
 span.date {
     padding-left: 0.5em;
-    vertical-align: 15%;
+    vertical-align: 2px;
 }
 .head {
     margin-top: 2em;
