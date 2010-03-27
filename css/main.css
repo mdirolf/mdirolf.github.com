@@ -33,29 +33,15 @@ a {
 }
 #hd a {
     color: {{ site.light }};
-    background-color: #1C2124;
     background-color: rgba(28, 33, 36, 0.6);
-/*    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#991C2124',endColorstr='#991C2124');
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#991C2124',endColorstr='#991C2124')";*/
 }
 a:hover {
     text-decoration: underline;
 }
 #t {
     font-size: 1050%;
-    color: #437056;
     color: rgba(67, 112, 86, 0.6);
-
-    /* TODO no idea if these actually work? are these just for bg color? */
-/*    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#99437056',endColorstr='#99437056');
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#99437056',endColorstr='#99437056')";*/
-
-    /* note this is broken in current safari but fixed in devel versions */
     text-shadow: rgba(214, 40, 34, 0.6) 0.1em 0em 0;
-    /* TODO no idea if this actually works or not? */
-/*    filter: progid:DXImageTransform.Microsoft.Shadow(color=#D62822,direction=90,strength=13);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#D62822,direction=90,strength=13)";*/
-
     letter-spacing: 0.05em;
     padding-top: 0.1em;
     z-index: 1;
@@ -311,7 +297,11 @@ pre {
 }
 .media-type {
 }
-/* JS GAMES */
+table.talks {
+    font-size: 123.1%;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
 #MD-Text {
    font-size: 180%;
    text-align: center;
@@ -323,9 +313,4 @@ pre {
 #MD-Canvas {
     padding-left: 5%;
     width: 90%
-}
-table.talks {
-    font-size: 123.1%;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
 }

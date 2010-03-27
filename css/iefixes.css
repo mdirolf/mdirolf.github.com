@@ -1,0 +1,12 @@
+#t {
+    color: #437056;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#D62822,direction=90,strength=13);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#D62822,direction=90,strength=13)";
+
+}
+
+#hd a {
+    background-color: #1C2124;
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#991C2124',endColorstr='#991C2124');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#991C2124',endColorstr='#991C2124')";
+}
