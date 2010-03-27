@@ -61,39 +61,36 @@ a:hover {
     z-index: 1;
     display: block;
 }
-#hl {
+#graphic {
     color: {{ site.light }};
     position: absolute;
     top: -0.25em;
     right: 3em;
     z-index: 2;
 }
-#hlll {
+.brace {
     font-size: 700%;
+}
+#left-brace {
     text-align: right;
     float: right;
-    z-index: 2;
 }
-#hll {
-    text-align: right;
-    float: left;
-    padding-right: 0.5em;
-    z-index: 2;
-}
-#hlr {
-    float: right;
-    z-index: 2;
-}
-#hlm {
+#middle {
+    text-align: center;
     float: right;
     font-size: 138.5%;
     padding-top: 1.5em;
-    z-index: 2;
 }
-#hlrr {
-    font-size: 700%;
+.rt {
+    padding-right: 0.5em;
+    text-align: right;
+}
+.lf {
+    padding-right: 0.3em;
+    text-align: left;
+}
+#right-brace {
     float: right;
-    z-index: 2;
 }
 #bd {
     font-family: georgia;
@@ -258,9 +255,6 @@ blockquote em {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
-table {
-    font-size: 123.1%;
-}
 td {
     padding-left: 0.3em;
 }
@@ -331,6 +325,7 @@ pre {
     width: 90%
 }
 table.talks {
+    font-size: 123.1%;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
