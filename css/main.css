@@ -194,6 +194,12 @@ ol li p {
 ol li div {
     font-style: normal;
 }
+.post ul li {
+    margin-left: 3em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    list-style-type: disc;
+}
 blockquote {
     margin-left: 0.2em;
     padding-left: 1em;
