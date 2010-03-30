@@ -1,7 +1,7 @@
 ---
 layout: post
 title: _Gluecon_ Early Bird _Discount_
-summary: I'll be speaking at "Gluecon":http://www.gluecon.com/2010/ in the end of May. The early bird pricing for registration ends on April 2nd, and you can get an additional 10% off of early bird registration as a reader of this blog if you use the code <code>spkr12</code>!
+summary: I'll be speaking at "Gluecon":http://www.gluecon.com/2010/ in the end of May. The early bird pricing for registration ends on April 2nd, and you can get an additional 10% off of early bird registration as a reader of this blog if you use the code "<code>spkr12</code>"!
 ---
 
 {{ page.summary }}
