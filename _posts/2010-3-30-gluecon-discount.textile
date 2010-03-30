@@ -6,4 +6,4 @@ summary: I'll be speaking at "Gluecon":http://www.gluecon.com/2010/ in the end o
 
 {{ page.summary }}
 
-The conference looks to have a great lineup -- "Dwight":http://dmerr.tumblr.com/ will be speaking as well so there will be a couple of members of the "10gen":http://www.10gen.com team in attendance. If you're going to be at Gluecon let me know in the comments, I look forward to seeing you there!
+The conference looks to have a great lineup -- "Dwight":http://dmerr.tumblr.com/ will be speaking as well so there will be a couple of members of the "10gen":http://www.10gen.com team in attendance. If you're going to be at Gluecon let me know in the comments. I look forward to seeing you there!
