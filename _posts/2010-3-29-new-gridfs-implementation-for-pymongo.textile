@@ -6,7 +6,7 @@ summary: One weak point of PyMongo has always been its support for GridFS. The G
 
 The API(Application Programming Interface) for "PyMongo":http://api.mongodb.org/python, the Python driver for "MongoDB":http://www.mongodb.org, has been pretty stable for quite some time now. In general, I think that the driver does a great job of exposing all of MongoDB's functionality in a way that is both MongoDB-ish and Pythonic (of course I'm biased -- if you have suggestions for improvements please let me know). There have been some minor tweaks recently, like an improvement for the "command API":http://api.mongodb.org/python/1.5.1%2B/api/pymongo/database.html#pymongo.database.Database.command, but there haven't been any huge changes in a while.
 
-All that said, I think there is one place where PyMongo has been deficient for a long time: its support for "GridFS":http://dochub.mongodb.org/core/gridfs. There are a couple of problems with the GridFS implementation in previous versions (**<= 1.5.1**) of PyMongo:
+All that said, I think there is one place where PyMongo has been deficient for a long time: its support for "GridFS":http://dochub.mongodb.org/core/gridfs. There are a couple of problems with the GridFS implementation in previous versions (**<= 1.5.2**) of PyMongo:
 
 * <p>It is slower and less concurrency-friendly than it needs to be.
 * <p>It could be much simpler and easier to work with.
