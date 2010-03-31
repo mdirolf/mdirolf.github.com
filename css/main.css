@@ -152,6 +152,9 @@ h3 {
     background-color: {{ site.mid_light_light }} !important;
     border-top: 0.1em solid {{ site.mid_light }};
 }
+#dsq-content .dsq-comment-message {
+    font-size: 108% !important;*/
+}
 #dsq-content .dsq-login-buttons {
     background-image: none !important;
 }
