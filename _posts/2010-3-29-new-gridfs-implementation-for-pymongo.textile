@@ -80,7 +80,7 @@ gridfs.errors.NoFile: ...
 
 h2. Advanced Usage
 
-While <code>put</code> should cover most use cases that opening a file in write mode used to, there may be some cases where you don't want to write all of the file's data at once. In that case you can use the <code>new_file</code> method to get a new <code>gridfs.grid_file.GridIn</code> instance which you can write to. When you're done with the instance call <code>close</code> (or just use Python 2.6's <code>with</code> statement to handle it for you). Like <code>put</code>, <code>new_file</code> takes keyword arguments for any of the values in the GridFS file spec. A cool note about both methods is that any unrecognized keyword arguments (in this example, <code>location</code>) will automatically be merged into the file's <code>metadata</code> property:
+While <code>put</code> should cover most use cases that opening a file in write mode used to, there may be some cases where you don't want to write all of the file's data at once. In that case you can use the <code>new_file</code> method to get a new <code>gridfs.grid_file.GridIn</code> instance which you can write to. When you're done with the instance call <code>close</code> (or just use Python 2.6's <code>with</code> statement to handle it for you). Like <code>put</code>, <code>new_file</code> takes keyword arguments for any of the values in the GridFS file spec. A cool note about both methods is that any unrecognized keyword arguments (in this example, <code>location</code>) will automatically be set as attributes on the underlying file document:
 
 {% highlight pycon %}
 >>> myfile = fs.new_file(location=[-74, 40.74])
@@ -91,8 +91,8 @@ While <code>put</code> should cover most use cases that opening a file in write 
 >>> out = fs.get(myfile._id)
 >>> out.read()
 'hello world and have a good day!'
->>> out.metadata
-{u'location': [-74, 40.740000000000002]}
+>>> out.location
+[-74, 40.740000000000002]
 {% endhighlight %}
 
 Most of the examples above have been referencing files in GridFS by their <code>_id</code>. The old API made more of a point of emphasizing <code>filename</code> as the primary mode of access. While the new API encourages the better practice of referencing by <code>_id</code>, there are still some cases where you might need to work with files based on <code>filename</code>, or where your application treats <code>filename</code> as a unique identifier.
