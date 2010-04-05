@@ -17,7 +17,7 @@ pop: rgb(214, 40, 34)
 
 # talks
 talks:
-  - data: 2010-04-05
+  - date: 2010-04-05
     title: Techzing - MongoDB
     link: http://techzinglive.com/?p=192
     media: audio
