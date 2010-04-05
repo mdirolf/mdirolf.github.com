@@ -17,6 +17,12 @@ pop: rgb(214, 40, 34)
 
 # talks
 talks:
+  - data: 2010-04-05
+    title: Techzing - MongoDB
+    link: http://techzinglive.com/?p=192
+    media: audio
+    summary: Podcast talking about MongoDB and 10gen.
+
   - date: 2010-03-08
     title: MongoDB - How it Works
     link: http://www.slideshare.net/mdirolf/mongodb-how-it-works
