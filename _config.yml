@@ -46,7 +46,7 @@ talks:
     title: 10gen Webinar
     link: http://www.slideshare.net/mdirolf/mongodb-how-it-works
     media: slides
-    summary: 'MongoDB - How it Works' webinar on MongoDB internals.
+    summary: MongoDB - How it Works, a webinar on MongoDB internals.
 
   - date: 2010-02-21
     title: PyCon Poster Session
