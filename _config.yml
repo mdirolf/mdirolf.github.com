@@ -25,7 +25,7 @@ talks:
     summary: Talk about the developments in PyMongo given at MongoSF.
 
   - date: 2010-04-30
-    title: CRUD and the JavaScript Shell
+    title: The JavaScript Shell
     link: http://github.com/mdirolf/shell_presentation/
     media: slides
     summary: Talk on the shell (from the shell) given at MongoSF.
