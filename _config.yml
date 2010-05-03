@@ -17,6 +17,19 @@ pop: rgb(214, 40, 34)
 
 # talks
 talks:
+
+  - date: 2010-04-30
+    title: Python Development
+    link: http://www.slideshare.net/mdirolf/python-mongosf
+    media: slides
+    summary: Talk about the developments in PyMongo given at MongoSF.
+
+  - date: 2010-04-30
+    title: CRUD and the JavaScript Shell
+    link: http://github.com/mdirolf/shell_presentation/
+    media: slides
+    summary: Talk on the shell (from the shell) given at MongoSF.
+
   - date: 2010-04-09
     title: Philly ETE
     link: /2010/04/09/introduction-to-mongodb.html
