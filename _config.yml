@@ -22,19 +22,19 @@ talks:
     title: FrozenRails
     link: http://www.slideshare.net/mdirolf/mongodb-at-frozenrails
     media: slides
-    summary: Introduction to MongoDB given at FrozenRails 2010.
+    summary: Introduction to MongoDB given at FrozenRails 2010 in Helsinki.
 
   - date: 2010-04-30
     title: MongoSF (2)
     link: http://www.slideshare.net/mdirolf/python-mongosf
     media: slides
-    summary: Talk about developments in PyMongo given at MongoSF.
+    summary: Talk about developments in PyMongo given at MongoSF in San Francisco.
 
   - date: 2010-04-30
     title: MongoSF (1)
     link: http://blip.tv/file/3591564/
     media: video
-    summary: Talk on the shell (from the shell) given at MongoSF.
+    summary: Talk on the shell (from the shell) given at MongoSF in San Francisco.
 
   - date: 2010-04-09
     title: Philly ETE
@@ -70,7 +70,7 @@ talks:
     title: N.E. Database Summit
     link: http://www.slideshare.net/mdirolf/new-england-database-summit-talk-on-mongodb
     media: slides
-    summary: Talk introducing MongoDB at the New England Database Summit - a meeting of academics and industry.
+    summary: Talk introducing MongoDB at the New England Database Summit - a meeting of academics and industry in Cambridge, MA.
 
   - date: 2010-01-22
     title: FLOSS Weekly
