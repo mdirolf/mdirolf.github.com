@@ -26,8 +26,8 @@ talks:
 
   - date: 2010-04-30
     title: MongoSF (2)
-    link: http://www.slideshare.net/mdirolf/python-mongosf
-    media: slides
+    link: http://blip.tv/file/3598745
+    media: video
     summary: Talk about developments in PyMongo given at MongoSF in San Francisco.
 
   - date: 2010-04-30
