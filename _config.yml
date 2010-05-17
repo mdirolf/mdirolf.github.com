@@ -18,6 +18,12 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
 
+  - date: 2010-05-12
+    title: NYC NoSQL
+    link: /2010/04/09/introduction-to-mongodb.html
+    media: slides
+    summary: Introduction to MongoDB at NYC NoSQL. Followed up by a talk on Hummingbird (MongoDB based real-time analytics) by Michael Nutt.
+
   - date: 2010-05-07
     title: FrozenRails
     link: http://www.slideshare.net/mdirolf/mongodb-at-frozenrails
