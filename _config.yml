@@ -18,6 +18,12 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
 
+  - date: 2010-05-18
+    title: NYC Cloud Computing Group
+    link: /2010/04/09/introduction-to-mongodb.html
+    media: slides
+    summary: Introduction to MongoDB which was followed up by a talk on MongoDB at Chartbeat by Kushal Dave.
+
   - date: 2010-05-12
     title: NYC NoSQL
     link: /2010/04/09/introduction-to-mongodb.html
