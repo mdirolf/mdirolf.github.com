@@ -5,17 +5,17 @@ title: talks
 <div class="head">
   <h1>Talks</h1>
 </div>
-<table class="talks">
+<table id="full-talks" class="talks">
   {% for talk in site.talks %}
   <tr title="{{ talk.summary }}">
     <td class="date">
       {{ talk.date | date_to_string }}
     </td>
-    <td>
-      {{ talk.title }}
+    <td class="title">
+      <a href="{{ talk.link }}">{{ talk.title }} ({{ talk.media }})</a>
     </td>
     <td>
-      <a href="{{ talk.link }}">{{ talk.media }}</a>
+      {{ talk.summary | truncate: 34 }}
     </td>
   </tr>
   {% endfor %}

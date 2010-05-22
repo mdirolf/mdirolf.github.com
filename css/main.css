@@ -303,6 +303,14 @@ pre {
 }
 .media-type {
 }
+#full-talks {
+   margin-top: 0.25em;
+   padding-right: 1em;
+}
+#full-talks td {
+    padding-top: 0.25em;
+    padding-left: 1em;
+}
 table.talks {
     font-size: 123.1%;
     margin-bottom: 0.5em;
