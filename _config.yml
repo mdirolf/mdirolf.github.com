@@ -18,6 +18,18 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
 
+  - date: 2010-05-21
+    title: MongoNYC (2)
+    link: http://www.slideshare.net/mdirolf/inside-pymongo-mongonyc
+    media: slides
+    summary: Inside PyMongo (what's new in 1.5/1.6/1.6+)
+
+  - date: 2010-05-21
+    title: MongoNYC (1)
+    link: http://github.com/mdirolf/shell_presentation/tree/mongonyc
+    media: slides
+    summary: Mastering the MongoDB Shell
+
   - date: 2010-05-18
     title: NY Cloud Computing Group
     link: /2010/04/09/introduction-to-mongodb.html
