@@ -147,5 +147,8 @@ talks_to_show: 15
       pageTracker._trackPageview();
       } catch(err) {}
     </script>
+    {% if page.disqus %}
+    <script type="text/javascript" src="http://disqus.com/forums/dirolf/embed.js"></script>
+    {% endif %}
   </body>
 </html>
