@@ -143,14 +143,14 @@ h3 {
 .dsq-dc-logo {
     display: none;
 }
-.dsq-options {
-    display: none;
-}
 #disqus_thread {
     margin: 1em -2em -2.5em -2em !important;
     padding: 1em 2em 2em 2em;
     background-color: {{ site.mid_light_light }} !important;
     border-top: 0.1em solid {{ site.mid_light }};
+}
+#dsq-content .dsq-options {
+    background-image: none !important;
 }
 #dsq-content .dsq-comment-message {
     font-size: 108% !important;*/
@@ -160,6 +160,9 @@ h3 {
 }
 #dsq-content .dsq-request-user-info {
     background-image: none !important;
+}
+#dsq-global-toolbar {
+    display: none !important;
 }
 .date {
     color: {{ site.pop }};
