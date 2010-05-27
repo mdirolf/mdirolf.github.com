@@ -18,6 +18,12 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
 
+  - date: 2010-05-27
+    title: Gluecon
+    link: /2010/05/27/inside-mongodb.html
+    media: slides
+    summary: Inside MongoDB - a talk about MongoDB internals given at Gluecon 2010
+
   - date: 2010-05-21
     title: MongoNYC (2)
     link: http://www.slideshare.net/mdirolf/inside-pymongo-mongonyc
@@ -34,91 +40,91 @@ talks:
     title: NY Cloud Computing Group
     link: /2010/04/09/introduction-to-mongodb.html
     media: slides
-    summary: Introduction to MongoDB which was followed up by a talk on MongoDB at Chartbeat by Kushal Dave.
+    summary: Introduction to MongoDB which was followed up by a talk on MongoDB at Chartbeat by Kushal Dave
 
   - date: 2010-05-12
     title: NYC NoSQL
     link: /2010/04/09/introduction-to-mongodb.html
     media: slides
-    summary: Introduction to MongoDB at NYC NoSQL. Followed up by a talk on Hummingbird (MongoDB based real-time analytics) by Michael Nutt.
+    summary: Introduction to MongoDB at NYC NoSQL which was followed up by a talk on Hummingbird (MongoDB based real-time analytics) by Michael Nutt
 
   - date: 2010-05-07
     title: FrozenRails
     link: http://www.slideshare.net/mdirolf/mongodb-at-frozenrails
     media: slides
-    summary: Introduction to MongoDB given at FrozenRails 2010 in Helsinki.
+    summary: Introduction to MongoDB given at FrozenRails 2010 in Helsinki
 
   - date: 2010-04-30
     title: MongoSF (2)
     link: http://blip.tv/file/3598745
     media: video
-    summary: Talk about developments in PyMongo given at MongoSF in San Francisco.
+    summary: Talk about developments in PyMongo given at MongoSF in San Francisco
 
   - date: 2010-04-30
     title: MongoSF (1)
     link: http://blip.tv/file/3591564/
     media: video
-    summary: Talk on the shell (from the shell) given at MongoSF in San Francisco.
+    summary: Talk on the shell (from the shell) given at MongoSF in San Francisco
 
   - date: 2010-04-09
     title: Philly ETE
     link: /2010/04/09/introduction-to-mongodb.html
     media: slides
-    summary: Introduction to MongoDB at Philly ETE.
+    summary: Introduction to MongoDB at Philly ETE
 
   - date: 2010-04-05
     title: Techzing
     link: http://techzinglive.com/?p=192
     media: audio
-    summary: Podcast talking about MongoDB and 10gen.
+    summary: Podcast talking about MongoDB and 10gen
 
   - date: 2010-03-08
     title: 10gen Webinar
     link: http://www.slideshare.net/mdirolf/mongodb-how-it-works
     media: slides
-    summary: MongoDB - How it Works, a webinar on MongoDB internals.
+    summary: MongoDB - How it Works, a webinar on MongoDB internals
 
   - date: 2010-02-21
     title: PyCon Poster Session
     link: http://www.scribd.com/doc/27220664/PyCon-2010-Poster-on-MongoDB
     media: slides
-    summary: PDF of a poster on MongoDB presented at PyCon 2010 in Atlanta.
+    summary: PDF of a poster on MongoDB presented at PyCon 2010 in Atlanta
 
   - date: 2010-02-02
     title: DC Python / ZPUG DC
     link: http://www.ustream.tv/recorded/4405505
     media: video
-    summary: A talk about MongoDB, PyMongo, and using both in combination with Django.
+    summary: A talk about MongoDB, PyMongo, and using both in combination with Django
 
   - date: 2010-01-28
     title: N.E. Database Summit
     link: http://www.slideshare.net/mdirolf/new-england-database-summit-talk-on-mongodb
     media: slides
-    summary: Talk introducing MongoDB at the New England Database Summit - a meeting of academics and industry in Cambridge, MA.
+    summary: Talk introducing MongoDB at the New England Database Summit - a meeting of academics and industry in Cambridge, MA
 
   - date: 2010-01-22
     title: FLOSS Weekly
     link: http://twit.tv/floss105
     media: audio
-    summary: Conversation about MongoDB on FLOSS Weekly.
+    summary: Conversation about MongoDB on FLOSS Weekly
 
   - date: 2010-01-21
     title: Django-NYC
     link: http://vimeo.com/9982657
     media: video
-    summary: Discussion about how to integrate MongoDB and Django now, and how this will look in the future.
+    summary: Discussion about how to integrate MongoDB and Django now, and how this will look in the future
 
   - date: 2010-01-14
     title: CodeMash 2.0.1.0
     link: http://www.slideshare.net/mdirolf/codemash-2010
     media: slides
-    summary: MongoDB talk from CodeMash in Sandusky, Ohio. An introduction.
+    summary: MongoDB talk from CodeMash in Sandusky, Ohio - an introduction
 
   - date: 2010-01-13
     title: dnrTV
     link: http://www.dnrtv.com/default.aspx?showNum=163
     media: video
-    summary: Michael Dirolf, who was recently on .NET Rocks! talking about MongoDB, shows us exactly what it is and how it works in this episode of dnrTV. Michael details installation options and demonstrates the key features.
+    summary: Michael Dirolf, who was recently on .NET Rocks! talking about MongoDB, shows us exactly what it is and how it works in this episode of dnrTV. Michael details installation options and demonstrates the key features
 
   - date: 2009-12-17
     title: The Changelog
