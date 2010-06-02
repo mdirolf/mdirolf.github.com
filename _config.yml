@@ -26,14 +26,14 @@ talks:
 
   - date: 2010-05-21
     title: MongoNYC (2)
-    link: http://www.slideshare.net/mdirolf/inside-pymongo-mongonyc
-    media: slides
+    link: http://blip.tv/file/3701097
+    media: video
     summary: Inside PyMongo (what's new in 1.5/1.6/1.6+)
 
   - date: 2010-05-21
     title: MongoNYC (1)
-    link: http://github.com/mdirolf/shell_presentation/tree/mongonyc
-    media: slides
+    link: http://blip.tv/file/3700829
+    media: video
     summary: Mastering the MongoDB Shell
 
   - date: 2010-05-18
