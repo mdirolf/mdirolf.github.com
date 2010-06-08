@@ -18,6 +18,12 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
 
+  - date: 2010-06-07
+    title: Europe Virtual ALT.NET
+    link: http://www.vimeo.com/12401993
+    media: video
+    summary: Introduction and discussion about MongoDB internals given as a virtual presentation with E-VAN
+
   - date: 2010-06-02
     title: Open Source Bridge
     link: /2010/04/09/introduction-to-mongodb.html
