@@ -307,15 +307,24 @@ pre {
 #projects br {
     float: clear;
 }
-.media-type {
-}
 #full-talks {
    margin-top: 0.25em;
    padding-right: 1em;
 }
 #full-talks td {
-    padding-top: 0.25em;
+    padding-top: 0.3em;
     padding-left: 1em;
+}
+.ellipsis {
+    width: 35em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+.talk-summary {
+    font-style: italic;
 }
 table.talks {
     font-size: 123.1%;

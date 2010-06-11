@@ -11,11 +11,10 @@ title: talks
     <td class="date">
       {{ talk.date | date_to_string }}
     </td>
-    <td class="title">
-      <a href="{{ talk.link }}">{{ talk.title }} ({{ talk.media }})</a>
-    </td>
     <td>
-      {{ talk.summary | truncate: 34 }}
+      <div class="ellipsis">
+        <a href="{{ talk.link }}">{{ talk.title }} ({{ talk.media }}) &mdash; <span class="talk-summary">{{ talk.summary }}</span></a>
+      </div>
     </td>
   </tr>
   {% endfor %}
