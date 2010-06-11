@@ -326,9 +326,12 @@ table.talks {
     padding: 0.5em;
     border: 0.1em solid {{ site.mid_light_dark }};
     float: right;
-    margin-top: 2em;
+    margin-top: 2.5em;
     margin-left: 1em;
     margin-right: 1em;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
 }
 #MD-Text {
    font-size: 180%;
