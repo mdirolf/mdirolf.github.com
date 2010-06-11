@@ -167,6 +167,9 @@ h3 {
 .date {
     color: {{ site.pop }};
 }
+#info .date {
+    color: {{ site.dark }};
+}
 span.date {
     padding-left: 0.5em;
     vertical-align: 0.2em;
