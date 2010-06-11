@@ -319,6 +319,14 @@ table.talks {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
+#headshot {
+    padding: 0.5em;
+    border: 0.1em solid {{ site.mid_light_dark }};
+    float: right;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
 #MD-Text {
    font-size: 180%;
    text-align: center;

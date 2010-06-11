@@ -67,32 +67,9 @@ talks_to_show: 15
         </div>
         <div id="info" class="yui-g">
           <div class="yui-u first">
-            <h1><a href="/talks.html">latest talks</a></h1>
-            <table class="talks">
-              {% for talk in site.talks limit:page.talks_to_show %}
-              <tr title="{{ talk.summary }}">
-                <td class="media-type" title="{{ talk.media | capitalize }}">
-                  ({{ talk.media | truncate:2, ")" }}
-                </td>
-                <td class="date">
-                  {{ talk.date | date_to_string }}
-                </td>
-                <td class="title">
-                  <a href="{{ talk.link }}">{{ talk.title }}</a>
-                </td>
-              </tr>
-              {% endfor %}
-              {% if site.talks.size > page.talks_to_show %}
-              <tr>
-                <td class="link" colspan="3">
-                  <a href="/talks.html">&laquo; all talks &raquo;</a>
-                </td>
-              </tr>
-              {% endif %}
-            </table>
-          </div>
-          <div class="yui-u">
             <h1>about</h1>
+            <a href="/images/headshot.jpg"><img src="/images/headshot_small.jpg"
+            id="headshot"/></a>
             <p>
             {% capture bio %}
             {% include bio.textile %}
@@ -128,6 +105,31 @@ talks_to_show: 15
                   <a href="http://bsonspec.org">bsonspec.org</a></li>
               </ul>
             </div>
+          </div>
+          <div class="yui-u">
+            <h1><a href="/talks.html">latest talks</a></h1>
+            <table class="talks">
+              {% for talk in site.talks limit:page.talks_to_show %}
+              <tr title="{{ talk.summary }}">
+                <td class="media-type" title="{{ talk.media | capitalize }}">
+                  ({{ talk.media | truncate:2, ")" }}
+                </td>
+                <td class="date">
+                  {{ talk.date | date_to_string }}
+                </td>
+                <td class="title">
+                  <a href="{{ talk.link }}">{{ talk.title }}</a>
+                </td>
+              </tr>
+              {% endfor %}
+              {% if site.talks.size > page.talks_to_show %}
+              <tr>
+                <td class="link" colspan="3">
+                  <a href="/talks.html">&laquo; all talks &raquo;</a>
+                </td>
+              </tr>
+              {% endif %}
+            </table>
           </div>
         </div>
       </div>
