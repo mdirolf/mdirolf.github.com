@@ -19,7 +19,7 @@ ObjectId('...')
 {u'y': 2, u'_id': ObjectId('...')}
 {% endhighlight %}
 
-The second call should look familiar to those who have used the MongoDB shell extensively, while the first is a little less verbose and has always been the PyMongo way of doing things. Since PyMongo was first implemented, there have been some new features added to the server which are best exposed through the <code>dict</code> interface, however, like specifying keys that we _don't_ want returned:
+The second call should look familiar to those who have used the MongoDB shell extensively, while the first is a little less verbose (and has always been the PyMongo way of doing things). Since PyMongo was first implemented, however, there have been some new features added to the server that are best exposed through the <code>dict</code> interface, like specifying keys that we _don't_ want returned:
 
 {% highlight pycon %}
 >>> db.test.find_one(fields={"y": 0})
@@ -75,7 +75,7 @@ connection.document_class=SON
 db.test.find_one()
 {% endhighlight %}
 
-There are a couple of cool things that fall out of this functionality. First, third party libraries like "MongoKit":http://bitbucket.org/namlook/mongokit/wiki/Home should have an easier time re-hydrating their models, and will probably be a little more efficient. Second, the class used doesn't even need to represent a document: it can just treat <code>__setitem__</code> like a hook allowing custom code to run on each key/value pair. Here, we create a custom class that just prints key/value pairs to stdout:
+There are a couple of cool things that fall out of this functionality. First, third party libraries like "MongoKit":http://bitbucket.org/namlook/mongokit/wiki/Home should have an easier time re-hydrating their models, and will probably be a little more efficient. Second, the class used doesn't even need to represent a document: it can just treat <code>__setitem__</code> like a hook, allowing custom code to run on each key/value pair. Here, we create a custom class that just prints key/value pairs to stdout:
 
 {% highlight pycon %}
 >>> class DocPrinter(object):

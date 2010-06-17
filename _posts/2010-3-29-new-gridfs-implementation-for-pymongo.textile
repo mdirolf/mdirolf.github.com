@@ -16,7 +16,7 @@ I think that all of these deficiencies stem from one fatal flaw in the original 
 
 h2. The New API
 
-The new GridFS API is available when installing the driver from the "master branch":http://github.com/mongodb/mongo-python-driver. I'm hoping to get some feedback based on this post before releasing a new version of PyMongo with the changes. There are "API docs":http://api.mongodb.org/python/current/api/gridfs/index.html available for the new version of GridFS, but this post walks through the API in a little more detail.
+The new GridFS API is available in PyMongo versions **>= 1.6**. There are "API docs":http://api.mongodb.org/python/current/api/gridfs/index.html available for the new version of GridFS, but this post walks through the API in a little more detail.
 
 Almost all of the API is exposed through the GridFS class, here's an example instantiation:
 
