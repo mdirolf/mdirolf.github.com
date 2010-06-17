@@ -1,0 +1,95 @@
+---
+layout: post
+title: _PyMongo_ _1.7_ Released
+summary: A new release for "PyMongo":http://api.mongodb.org/python has been long overdue &ndash; the last release (1.6) was made on May 11th, over two months ago! It's been a busy couple of months with travel and "writing":http://oreilly.com/catalog/9781449389536/ (and life), so a release hasn't been on the top of the list. I finally made the effort to get a release out today, though, and the result is PyMongo 1.7. For a full list of changes, check the "changelog":http://api.mongodb.org/python/1.7/changelog.html; in this post I'll talk about a few of them in detail.
+---
+
+{{ page.summary }}
+
+h2. Using a <code>dict</code> to Specify Fields to Return
+
+One of the smallest changes in 1.7 is that the _fields_ argument to <code>find</code>/<code>find_one</code> can now take a <code>dict</code> in addition to a <code>list</code>. So, the following two <code>find_one</code>s are equivalent:
+
+{% highlight pycon %}
+>>> db.test.save({"x": 1, "y": 2, "z": [1, 2, 3, 4]})
+ObjectId('...')
+>>> db.test.find_one(fields=["y"])
+{u'y': 2, u'_id': ObjectId('...')}
+>>> db.test.find_one(fields={"y": 1})
+{u'y': 2, u'_id': ObjectId('...')}
+{% endhighlight %}
+
+The second call should look familiar to those who have used the MongoDB shell extensively, while the first is a little less verbose and has always been the PyMongo way of doing things. Since PyMongo was first implemented, there have been some new features added to the server which are best exposed through the <code>dict</code> interface, however, like specifying keys that we _don't_ want returned:
+
+{% highlight pycon %}
+>>> db.test.find_one(fields={"y": 0})
+{u'x': 1, u'_id': ObjectId('...'), u'z': [1, 2, 3, 4]}
+>>> db.test.find_one(fields={"z": 0})
+{u'y': 2, u'x': 1, u'_id': ObjectId('...')}
+{% endhighlight %}
+
+Or using the new <code>$slice</code> operator to only return portions of an array:
+
+{% highlight pycon %}
+>>> db.test.find_one(fields={"z": {"$slice": 2}})
+{u'y': 2, u'x': 1, u'_id': ObjectId('...'), u'z': [1, 2]}
+>>> db.test.find_one(fields={"z": {"$slice": -2}})
+{u'y': 2, u'x': 1, u'_id': ObjectId('...'), u'z': [3, 4]}
+>>> db.test.find_one(fields={"z": {"$slice": [1, 2]}})
+{u'y': 2, u'x': 1, u'_id': ObjectId('...'), u'z': [2, 3]}{% endhighlight %}
+
+h2. <code>datetime</code> Handling
+
+PyMongo 1.7 also improves support for working with <code>datetime</code> instances. The first change is that timezone aware datetimes are now properly encoded, by converting them to UTC before saving them. Naive datetimes will still be assumed to be in UTC.
+
+Since "BSON":http://bsonspec.org is not currently capable of storing datetimes with timezone information, all datetimes will still _decode_ as UTC. Currently the <code>datetime</code> instances returned will be naive, but that will probably change in the future as well.
+
+A final change in 1.7 is that the PyMongo C extension now uses the "y2038":http://code.google.com/p/y2038/ project's implementation of _time.h_. This allows the C extension to properly support dates beyond January 19, 2038. There might still be issues for users on 32-bit platforms using the pure-Python encoder, at least for older versions of Python.
+
+h2. max_scan
+
+Version 1.7 adds support for the server's new <code>max_scan</code> functionality. max_scan allows a developer to set the maximum number of documents to scan for each individual query. This functionality can be useful when a developer wants guaranteed performance, even if it means a partial result set.
+
+p(note). <code>max_scan</code> requires a MongoDB server version **>= 1.5.1**.
+
+max_scan can be passed as an argument to <code>find</code>/<code>find_one</code>, or can be added to a <code>Cursor</code> using chaining; the following two queries are equivalent:
+
+{% highlight python %}
+db.test.find({"a": 1}, max_scan=50)
+
+db.test.find({"a": 1}).max_scan(50)
+{% endhighlight %}
+
+h2. Custom Classes for Returned Documents
+
+The BSON decoder in PyMongo normally decodes all documents as <code>dict</code>s. Version 1.7 adds the ability to specify a custom class to decode to. All the class needs is to have a <code>__setitem__</code> method, which will be called for each key/value pair in the BSON being decoded.
+
+This ability is exposed through the _as_class_ argument to <code>find</code>/<code>find_one</code>, and a new default class can be set using a <code>Connection</code>'s _document_class_ attribute. The two queries below both decode to <code>SON</code>, so that the resultant documents maintain key order:
+
+{% highlight python %}
+from pymongo.son import SON
+
+db.test.find_one(as_class=SON)
+
+connection.document_class=SON
+db.test.find_one()
+{% endhighlight %}
+
+There are a couple of cool things that fall out of this functionality. First, third party libraries like "MongoKit":http://bitbucket.org/namlook/mongokit/wiki/Home should have an easier time re-hydrating their models, and will probably be a little more efficient. Second, the class used doesn't even need to represent a document: it can just treat <code>__setitem__</code> like a hook allowing custom code to run on each key/value pair. Here, we create a custom class that just prints key/value pairs to stdout:
+
+{% highlight pycon %}
+>>> class DocPrinter(object):
+...     def __setitem__(self, key, value):
+...         print "(%r, %r)" % (key, value)
+... 
+>>> db.test.save({"x": 1})
+ObjectId('4c1a4ee9e6fb1b5adb000001')
+>>> db.test.find_one(as_class=DocPrinter)
+(u'_id', ObjectId('4c1a4ee9e6fb1b5adb000001'))
+(u'x', 1)
+<__main__.DocPrinter object at 0x1012d7bd0>
+{% endhighlight %}
+
+This example is a bit pointless, but I'm sure readers can think of much cooler things to do with it!
+
+There's a whole bunch more that's new in PyMongo 1.7: check the "changelog":http://api.mongodb.org/python/1.7/changelog.html for the full list, and go upgrade!
