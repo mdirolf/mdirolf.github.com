@@ -286,6 +286,7 @@ p.note {
     padding: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
+    line-height: 1.5em;
 }
 .highlight {
     -moz-border-radius: 0.75em;
