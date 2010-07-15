@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+          "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>be bit.ly</title>
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/bebitly.js"></script>
+  </head>
+  <body>
+    <div style="font-family: futura, sans-serif; width: 700px; margin: auto;">
+      <span style="position: relative; top: -0.3em; font-size: 800%; color: dodgerblue;">be</span><img src="images/bitlylogo.jpg">
+      <div style="font-size: 115%;" id="intro">
+        <div style="font-size: 150%">It's a Game!</div><br>
+        You have to be <a href="bit.ly">bit.ly</a>: shorten incoming
+        urls and, later, unshorten them.<br>
+        <br>
+        Be fast: requests can timeout<br>
+        Shorter urls &rarr; more points<br>
+        Given the same url, you need to give the same hash<br>
+        You can't use the same hash for multiple urls<br>
+        <br>
+        Ready? Press <b>space</b> to start
+      </div>
+      <div id="game">
+        <table width="100%">
+          <tr>
+            <td>total shorts: <span id="total">0</span></td>
+            <td style="font-size: 250%; color: steelblue;" rowspan="2"><span id="task_time">0:00</span></td>
+            <td style="font-size: 250%; color: olivedrab; text-align: right;" rowspan="2"><span id="score">0</span></td>
+          </tr>
+          <tr>
+            <td>average hash length: <span id="average">0</span></td>
+          </tr>
+        </table>
+
+        <div style="text-align: center; font-size: 150%; color: tomato" id="error"></div>
+        <div style="text-align: center; font-size: 200%; margin: 1em 0em 1em 0em;">
+          <span id="help"></span> <span style="font-style: italic" id="url"></span>
+        </div>
+        <input style="font-size: 200%; border: none; outline-width: 0; border-bottom: 1px solid black; width: 700px;" id="text"></input>
+        <div style="font-size: 200%;" id="options"></div>
+      </div>
+      <div style="padding-top: 2em">&copy; 2010 <a href="http://dirolf.com">Mike Dirolf</a> &mdash; <a href="http://github.com/mdirolf/bebitly">source</a></div>
+    </div>
+  </body>
+</html>
