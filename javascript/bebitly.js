@@ -176,7 +176,7 @@ function timers () {
 
 function begin (e) {
     if (e.which == 32) {
-        $("body").keyup(function () {});
+        $(document).keyup(function () {});
         $("#intro").hide();
         $("#game").show();
         $("#text").keyup(handle_text);
@@ -187,7 +187,7 @@ function begin (e) {
 
 function init () {
     $("#game").hide();
-    $("body").keyup(begin);
+    $(document).keyup(begin);
 }
 
 $(document).ready(init);
