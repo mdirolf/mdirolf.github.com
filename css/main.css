@@ -123,9 +123,9 @@ h1 a {
     color: {{ site.dark }};
 }
 h2 {
+    margin-top: 1.5em;
     font-family: arial;
     font-size: 153.9%;
-    display: inline;
 }
 h2 a {
     text-decoration: none;
@@ -281,6 +281,9 @@ td.link {
 p.note {
     padding-top: 1em;
     padding-bottom: 1em;
+}
+.warning {
+    border: 0.1em solid {{ site.pop }};
 }
 .highlight pre {
     padding: 1em;
