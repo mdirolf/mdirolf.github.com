@@ -18,6 +18,12 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
 
+  - date: 2010-08-25
+    title: O'Reilly Webcast
+    link: http://www.youtube.com/watch?v=w5qr4sx5Vt0
+    media: video
+    summary: Introduction to MongoDB with Q&A at the end
+
   - date: 2010-06-07
     title: Europe Virtual ALT.NET
     link: http://www.vimeo.com/12401993
