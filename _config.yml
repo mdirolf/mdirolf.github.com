@@ -18,6 +18,18 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
 
+  - date: 2010-09-20
+    title: MongoBoston (2)
+    link: /2010/05/27/inside-mongodb.html
+    media: slides
+    summary: Inside MongoDB - a talk about MongoDB internals
+
+  - date: 2010-09-20
+    title: MongoBoston (1)
+    link: http://www.slideshare.net/mdirolf/indexing
+    media: slides
+    summary: MongoDB Indexing - a talk about indexing in MongoDB
+
   - date: 2010-08-25
     title: O'Reilly Webcast
     link: http://www.youtube.com/watch?v=w5qr4sx5Vt0
