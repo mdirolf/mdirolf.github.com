@@ -20,8 +20,8 @@ talks:
 
   - date: 2010-09-20
     title: MongoBoston (2)
-    link: /2010/05/27/inside-mongodb.html
-    media: slides
+    link: http://www.10gen.com/video/mongoboston2010/mongodbinternals
+    media: video
     summary: Inside MongoDB - a talk about MongoDB internals
 
   - date: 2010-09-20
