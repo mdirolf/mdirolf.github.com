@@ -105,7 +105,7 @@ p {
 p + p {
     margin-top: 1.5em;
 }
-.post-content p {
+.post-content p, .post-content li {
     font-size: 123.1%;
     font-family: georgia;
 }
@@ -160,9 +160,6 @@ h3 {
 }
 #dsq-content .dsq-request-user-info {
     background-image: none !important;
-}
-#dsq-global-toolbar {
-    display: none !important;
 }
 .date {
     color: {{ site.pop }};
