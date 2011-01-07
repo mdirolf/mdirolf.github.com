@@ -4,7 +4,7 @@ title: "_MongoDB_: The Definitive Guide _Giveaway_"
 summary: I have a few copies of "the MongoDB book":http://www.amazon.com/gp/product/1449381561?ie=UTF8&tag=mikdir-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1449381561 sitting in my apartment, and I've decided to give them away! Click through for details on how to win a copy.
 ---
 
-p(note). The contest is closed and the winners have been "announced":/2011/01/07/mongodb-contest-winners.html
+p(note). Updated 2011-1-7: The contest is closed and the winners have been "announced":/2011/01/07/mongodb-contest-winners.html
 
 <a href="http://www.amazon.com/gp/product/1449381561?ie=UTF8&tag=mikdir-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1449381561"><img src="/images/mongodb_tdg.jpg" width="250" height="328" style="float: left; padding: 0.5em 2em 0.5em 0;"></a>
 
