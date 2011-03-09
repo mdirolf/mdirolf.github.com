@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Create a _Mailing List_ With _fiesta.cc_"
-summary: Introduction and beta invite my new project (fiesta.cc), which makes it easy to <a href="https://fiesta.cc">create group emails / mailing lists</a>.
+summary: Introduction and beta invite to my new project (fiesta.cc), which makes it easy to <a href="https://fiesta.cc">create group emails / mailing lists</a>.
 ---
 
 <img src="/images/fiesta.png" width="350" height="76" style="float: left; padding: 0.5em 2em 0.5em 0em;"></a>
