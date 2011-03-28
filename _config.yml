@@ -18,6 +18,18 @@ pop: rgb(214, 40, 34)
 # talks
 talks:
 
+  - date: 2011-03-21
+    title: Business Insider
+    link: http://www.businessinsider.com/fiestacc-group-email-startup-mike-dirolf
+    media: text
+    summary: A great piece on fiesta.cc in SAI.
+
+  - date: 2011-03-17
+    title: BetaBeat
+    link: http://www.betabeat.com/2011/03/17/make-mailing-lists-dead-simple-with-fiesta-cc/
+    media: text
+    summary: A short article about fiesta.cc in The Observer's tech blog, BetaBeat.
+
   - date: 2010-09-20
     title: MongoBoston (2)
     link: http://www.10gen.com/video/mongoboston2010/mongodbinternals
