@@ -6,7 +6,7 @@ summary: "I've been nominally using MongoDB since 2008, but most of my experienc
 
 I've been nominally using MongoDB since 2008, but most of my experience has been as a MongoDB developer, not a real end user. Over the past few months I've made the transition to other side, _using_ MongoDB rather than developing it. The project I've been working on, "fiesta":https://fiesta.cc, uses MongoDB exclusively for data storage. Here are some thoughts on MongoDB from my new perspective.
 
-h2. Flexability
+h2. Flexibility
 
 In the "presentations":/talks.html I've done about MongoDB, I have always made a point to talk about how the document-oriented data model makes the database very flexible. I'd generally cite the example of how, when working with the folks at Business Insider, we'd seen the need to run any sort of migrations basically disappear. I'd explain how documents in a collection can have any "shape", and how doing migrations was often as simple as adding an extra key when saving new documents. Sometimes people didn't quite buy this. Now that I have some concrete examples from fiesta, maybe I can explain a little better.
 
