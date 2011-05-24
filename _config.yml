@@ -17,6 +17,11 @@ pop: rgb(214, 40, 34)
 
 # talks
 talks:
+  - date: 2011-03-23
+    title: We Are NY Tech
+    link: http://wearenytech.com/99-mike-dirolf-founder-fiesta-cc
+    media: text
+    summary: Profile on We Are NY Tech
 
   - date: 2011-03-21
     title: Business Insider
