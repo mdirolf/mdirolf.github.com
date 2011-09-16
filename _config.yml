@@ -17,6 +17,18 @@ pop: rgb(214, 40, 34)
 
 # talks
 talks:
+  - date: 2011-09-16
+    title: PyGotham
+    link: http://speakerdeck.com/u/mdirolf/p/behind-the-scenes-at-fiesta
+    media: slides
+    summary: A look at the technology behind Fiesta.
+
+  - date: 2011-06-03
+    title: DevChatt
+    link: http://speakerdeck.com/u/mdirolf/p/mongodb-in-and-outside
+    media: slides
+    summary: An intro/internals talk about MongoDB and Fiesta.
+
   - date: 2011-03-23
     title: We Are NY Tech
     link: http://wearenytech.com/99-mike-dirolf-founder-fiesta-cc
