@@ -17,6 +17,12 @@ pop: rgb(214, 40, 34)
 
 # talks
 talks:
+  - date: 2011-10-04
+    title: IdeaMensch
+    link: http://ideamensch.com/mike-dirolf/
+    media: text
+    summary: Interview about myself and Fiesta on IdeaMensch
+
   - date: 2011-09-16
     title: BreakBumperTV
     link: http://www.examiner.com/tech-industry-in-new-york/interview-mike-diroff-ceo-of-fiesta-cc-video
