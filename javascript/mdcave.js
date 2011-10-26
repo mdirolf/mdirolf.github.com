@@ -3,7 +3,7 @@ var min_width = 2 * res / 10;
 var acc = 0.1;
 
 //initialize the array of top and bottom values
-var top;
+var the_top;
 var bottom;
 var positions;
 var blockers;
@@ -68,8 +68,8 @@ function step() {
     last_top = new_top;
     last_width = new_width;
 
-    top.shift();
-    top.push(new_top);
+    the_top.shift();
+    the_top.push(new_top);
     bottom.shift();
     bottom.push(new_top + new_width);
 
@@ -86,7 +86,7 @@ function step() {
     positions.shift();
 
     //check walls
-    if(positions[res / 5 - 1] < top[res / 5 - 1] || positions[res / 5 - 1] > bottom[res / 5 - 1]) {
+    if(positions[res / 5 - 1] < the_top[res / 5 - 1] || positions[res / 5 - 1] > bottom[res / 5 - 1]) {
         done();
         return;
     }
@@ -135,7 +135,7 @@ function draw() {
     ctx.beginPath();
     ctx.moveTo(0, 0);
     for(var i = 0; i < res; i++) {
-        ctx.lineTo(i, top[i]);
+        ctx.lineTo(i, the_top[i]);
     }
     ctx.lineTo(res - 1, 0);
     ctx.fill();
@@ -169,7 +169,7 @@ function init() {
 
     finished = false;
 
-    top = new Array();
+    the_top = new Array();
     bottom = new Array();
     positions = new Array();
     blockers = new Array();
@@ -178,7 +178,7 @@ function init() {
         if(i < res / 5) {
             positions.push(res / 2);
         }
-        top.push(res / 10);
+        the_top.push(res / 10);
         bottom.push(9 * res / 10);
     }
 
