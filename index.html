@@ -1,20 +1,27 @@
----
-layout: default
-posts_to_show: 3
----
-<div>
-  {% for post in site.posts limit:page.posts_to_show %}
-  <div class="post">
-    <div class="post-head">
-      <h1><a href="{{ post.url }}">{{ post.title | textilize | remove:'<p>' | remove:'</p>' }}</a></h1>
-      <span class="date">{{ post.date | date_to_long_string }}</span>
-    </div>
-    <div class="post-summary">
-      {{ post.summary | textilize }} <a href="{{ post.url }}">(more&hellip;)</a>
-    </div>
-  </div>
-  {% endfor %}
-  {% if site.posts.size > page.posts_to_show %}
-  <h3><a href="/archive.html">&laquo; all posts &raquo;</a></h3>
-  {% endif %}
-</div>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Mike Dirolf</title>
+    <link rel="openid.server" href="http://www.myopenid.com/server">
+    <link rel="openid.delegate" href="http://mdirolf.myopenid.com/">
+    <link rel="openid2.local_id" href="http://mdirolf.myopenid.com">
+    <link rel="openid2.provider" href="http://www.myopenid.com/server">
+    <meta http-equiv="X-XRDS-Location"
+          content="http://www.myopenid.com/xrds?username=mdirolf.myopenid.com">
+  </head>
+  <body>
+    <p>Hi, I'm <a href="http://twitter.com/mdirolf">Mike Dirolf</a>.</p>
+    <p>Currently, I'm working on <a href="https://fiesta.cc">Fiesta</a> and <a href="https://gitlists.com">Gitlists</a>.</p>
+    <p>I used to work on <a href="http://www.amazon.com/gp/product/1449381561?ie=UTF8&tag=mikdir-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1449381561">MongoDB</a> and <a href="http://loudonvillelongboards.com">Loudonville Longboards</a>.</p>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-2059775-3");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</head>
