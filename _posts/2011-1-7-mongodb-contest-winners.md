@@ -1,0 +1,33 @@
+---
+layout: post
+title: "_MongoDB_ Contest _Winners_"
+summary: Announcing the winners of the "MongoDB book giveaway":/2010/12/30/mongodb-the-definitive-guide-giveaway.html.
+---
+
+<a href="http://www.amazon.com/gp/product/1449381561?ie=UTF8&tag=mikdir-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1449381561"><img src="/images/mongodb_tdg.jpg" width="250" height="328" style="float: right; padding: 0.5em 0 0.5em 2em;"></a>
+
+It has been about a week since I announced that I was [giving
+away](/2010/12/30/mongodb-the-definitive-guide-giveaway.html) of copies
+of
+<a href="http://www.amazon.com/gp/product/1449381561?ie=UTF8&tag=mikdir-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1449381561">MongoDB:
+The Definitive
+Guide</a><img src="http://www.assoc-amazon.com/e/ir?t=mikdir-20&l=as2&o=1&a=1449381561" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />.
+So, it’s time to announce the winners!
+
+I did a random drawing of the people who commented on the post (only
+including those who actually listed their favorite restaurant!). The
+winners are (drum roll):
+
+-   Rob D (Robdoherty2)
+-   Shehab Hamad
+-   Sam Sen
+
+If you’re one of the winners, please send me an email (address is in the
+header of this site) with your address and we’ll figure out how to get
+you your copy! If you didn’t win, don’t lose all hope: if any of the
+winners don’t pipe up within the next week, I’ll pick a new name. If all
+the prizes are claimed, or they aren’t but you still don’t win, send me
+an email and I’ll set you up with a nice discount on the book (contest
+participants only, please).
+
+Thanks for playing!
