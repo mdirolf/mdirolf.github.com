@@ -4,7 +4,7 @@ disqus: true
 ---
 <div class="post">
   <div class="head">
-    <h1><a href="{{ first_post.url }}">{{ page.title | textilize | remove:'<p>' | remove:'</p>' }}</a></h1>
+    <h1><a href="{{ first_post.url }}">{{ page.title | markdownify | remove:'<p>' | remove:'</p>' }}</a></h1>
     <span class="date">{{ page.date | date_to_long_string }}</span>
   </div>
   <div class="post-content">

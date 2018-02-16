@@ -1,5 +1,4 @@
 # jekyll config
-markdown: rdiscount
 pygments: true
 
 # sitewide config

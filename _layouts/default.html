@@ -8,7 +8,7 @@ talks_to_show: 15
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     {% if page.title %}
-    <title>{{ page.title | textilize | strip_html }} - Mike Dirolf</title>
+    <title>{{ page.title | markdownify | strip_html }} - Mike Dirolf</title>
     {% else %}
     <title>Mike Dirolf</title>
     {% endif %}
@@ -72,9 +72,9 @@ talks_to_show: 15
             id="headshot" alt="headshot"></a>
             <p>
             {% capture bio %}
-            {% include bio.textile %}
+            {% include bio.md %}
             {% endcapture %}
-            {{ bio | textilize }}
+            {{ bio | markdownify }}
             </p>
             <h1>projects</h1>
             <div id="projects">
