@@ -21,21 +21,11 @@ deficient for a long time: its support for
 problems with the GridFS implementation in previous versions (**<span
 style="text-align:left;">= 1.5.2</span>**) of PyMongo:
 
-\*
+* It is slower and less concurrency-friendly than it needs to be.
 
-<p>
-It is slower and less concurrency-friendly than it needs to be.
+* It could be much simpler and easier to work with.
 
-\*
-
-<p>
-It could be much simpler and easier to work with.
-
-\*
-
-<p>
-It allows some operations (modifying existing files) that are incorrect
-according to the GridFS semantics.
+* It allows some operations (modifying existing files) that are incorrect according to the GridFS semantics.
 
 I think that all of these deficiencies stem from one fatal flaw in the
 original API design: it was trying *too hard* to mimic Python’s

@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Working With _Stored_ _JavaScript_ in _MongoDB_
-summary: JavaScript is a very important language in the MongoDB ecosystem. Not only is the "shell":http://www.mongodb.org/display/DOCS/mongo+-+The+Interactive+Shell JavaScript, but the server features a built-in JS(JavaScript) interpreter as well. The embedded interpreter is used in all sorts of different ways, including for "Map/Reduce":http://www.mongodb.org/display/DOCS/MapReduce, "db.eval":http://www.mongodb.org/display/DOCS/Server-side+Code+Execution#Server-sideCodeExecution-Using%7B%7Bdb.eval%28%29%7D%7D, and "$where clauses":http://www.mongodb.org/display/DOCS/Server-side+Code+Execution#Server-sideCodeExecution-%7B%7B%24where%7D%7DClausesandFunctionsinQueries. One nice feature supported by MongoDB is the ability to store JS functions on the server.
 ---
-
-{{ page.summary }}
 
 Stored JS in MongoDB is saved in the special *system.js* collection. The
 documents there should be structured like:
