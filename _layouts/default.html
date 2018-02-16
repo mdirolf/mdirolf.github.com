@@ -68,70 +68,9 @@ talks_to_show: 15
         <div id="info" class="yui-g">
           <div class="yui-u first">
             <h1>about</h1>
-            <a href="/images/headshot.jpg"><img src="/images/headshot_small.jpg"
-            id="headshot" alt="headshot"></a>
             <p>
-            {% capture bio %}
-            {% include bio.md %}
-            {% endcapture %}
-            {{ bio | markdownify }}
+              Play <a href="https://www.barabbit.com">Barabbit</a>!
             </p>
-            <h1>projects</h1>
-            <div id="projects">
-              <ul>
-                <li title="peace is brave">
-                  <a href="http://www.peaceisbrave.com">peace is brave</a></li>
-                <li title="Effortless mailing lists">
-                  <a href="https://fiesta.cc">fiesta.cc</a></li>
-                <li title="Python driver for MongoDB">
-                  <a href="http://api.mongodb.org/python/">PyMongo</a></li>
-                <li title="Ruby driver for MongoDB">
-                  <a href="http://github.com/mongodb/mongo-ruby-driver">mongo-ruby-driver</a></li>
-                <li title="Document-oriented database">
-                  <a href="http://www.mongodb.org">MongoDB</a></li>
-                <li title="Nginx module for serving content from GridFS">
-                  <a href="http://github.com/mdirolf/nginx-gridfs">nginx-gridfs</a></li>
-                <li title="Connector to use MongoDB with Google App Engine">
-                  <a href="http://github.com/mdirolf/mongo-appengine-connector">appengine-connector</a></li>
-                <li title="Standard ML driver for MongoDB">
-                  <a href="http://github.com/mdirolf/mlmongo">mlmongo</a></li>
-                <li title="Pure Python implementation of the Porter 2 stemming algorithm">
-                  <a href="/project/pyporter2.html">pyporter2</a></li>
-                <li title="A fun little JavaScript game inspired by the Rubik's Cube">
-                  <a href="/2007/11/zoomix-another-javascript-game.html">Zoomix</a></li>
-                <li title="A fun little JavaScript game">
-                  <a href="/2007/06/fun-game.html">MDCave</a></li>
-                <li title="A 2D space exploration game">
-                  <a href="http://github.com/mdirolf/space">space</a></li>
-                <li title="Specification page for the BSON format">
-                  <a href="http://bsonspec.org">bsonspec.org</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="yui-u">
-            <h1><a href="/talks.html">talks and stuff</a></h1>
-            <table class="talks">
-              {% for talk in site.talks limit:page.talks_to_show %}
-              <tr title="{{ talk.summary }}">
-                <td class="media-type" title="{{ talk.media | capitalize }}">
-                  ({{ talk.media | truncate:2, ")" }}
-                </td>
-                <td class="date">
-                  {{ talk.date | date_to_string }}
-                </td>
-                <td class="title">
-                  <a href="{{ talk.link }}">{{ talk.title }}</a>
-                </td>
-              </tr>
-              {% endfor %}
-              {% if site.talks.size > page.talks_to_show %}
-              <tr>
-                <td class="link" colspan="3">
-                  <a href="/talks.html">&laquo; all &raquo;</a>
-                </td>
-              </tr>
-              {% endif %}
-            </table>
           </div>
         </div>
       </div>
