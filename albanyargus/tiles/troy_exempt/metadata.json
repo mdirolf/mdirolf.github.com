@@ -1,0 +1,12 @@
+{
+    "attribution": "Data \u00a9 OpenStreetMap (and) Albany Argus", 
+    "description": "", 
+    "bounds": "-73.7177,42.6875,-73.6432,42.8009", 
+    "name": "Troy Exempt Properties", 
+    "minzoom": "12", 
+    "version": "1.0.0", 
+    "template": "{{#__location__}}{{/__location__}}{{#__teaser__}}{{{parcel_addr}}}{{/__teaser__}}{{#__full__}}{{/__full__}}", 
+    "maxzoom": "18", 
+    "legend": "", 
+    "center": "-73.6752,42.741,12"
+}

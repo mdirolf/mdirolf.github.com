@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Troy NY Tax Exempt Properties Map | Albany Argus</title>
+    
+
+<link rel="stylesheet" href="/css/leaflet.css" />
+
+<script src="/js/leaflet.js"></script>
+
+<script src="/js/utfgrid.js"></script>
+
+<style>
+
+#map {
+
+  height: 480px;
+
+  width: 100%;
+
+  cursor: pointer;
+
+}
+
+.info {
+
+  color:#555;
+
+  box-shadow: 0 0 1px #888;
+
+  padding: 6px 8px;
+
+  font: 14px/16px Arial, Helvetica, sans-serif;
+
+  background: rgba(255,255,255,0.6);
+
+  border-radius: 10px;
+
+}
+
+.info.hidden {
+
+  display: none;
+
+}
+
+</style>
+
+
+    <link rel="stylesheet" type="text/css" href="/css/pure.css"/>
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" type="text/css" href="/css/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" type="text/css" href="/css/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2059775-7', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    <div class="pure-g">
+      <div class="pure-u-1">
+        
+
+<h2>Map of Tax Exempt Properties in Troy, NY</h2>
+
+
+
+<p>Properties in red are taxable. Properties in purple are tax-exempt. Properties in green are railroad/utility properties which are taxed under a separate scheme.</p>
+
+
+
+<div id="map"></div>
+
+
+
+<script>
+
+  var tiles = L.tileLayer('/tiles/troy_exempt/{z}/{x}/{y}.png')
+
+  var utfGrid = new L.utfGrid('/tiles/troy_exempt/{z}/{x}/{y}.grid.json', {
+
+    useJsonP: false
+
+  });
+
+
+
+  utfGrid.on('mouseover', function(e){ info.update(e);}).on('mouseout', function(e){ info.update();})
+
+
+
+  var info = L.control();
+
+  info.options.position = 'topright';
+
+  info.onAdd = function (map) {
+
+    this._div = L.DomUtil.create('div', 'info');
+
+    this.update();
+
+    return this._div;
+
+  };
+
+
+
+  info.update = function (props) {
+
+    this._div.innerHTML = (props ?
+
+      "<values>" + props.data.parcel_addr + "</values>"
+
+  : null);
+
+  if (props) {
+
+  L.DomUtil.removeClass(this._div, 'hidden');
+
+  } else {
+
+  L.DomUtil.addClass(this._div, 'hidden');
+
+  }
+
+  };
+
+  var map = L.map('map', {center: new L.LatLng(42.7410,-73.6752), zoom: 14, minZoom: 12, maxZoom: 18}).addLayer(tiles).addLayer(utfGrid).addControl(info);
+
+</script>
+
+
+        <footer>
+          
+          <p>All <a href="/">Albany Argus</a> content is available for reuse under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License</a>.</p>
+          <form action="//albanyargus.us14.list-manage.com/subscribe/post?u=440f94144c2e28086c4f907e4&amp;id=742f1b85a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <label for="mce-EMAIL">Enter your email and we'll notify you about new essays: </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_440f94144c2e28086c4f907e4_742f1b85a8" tabindex="-1" value=""></div>
+          </form>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
